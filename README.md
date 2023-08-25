@@ -7,7 +7,7 @@ My dotfiles managed with [chezmoi](https://www.chezmoi.io/).
 Install chezmoi :
 
 ```bash
-pacman -S chezmoi
+yay -S chezmoi
 ```
 
 Setup new machine :
