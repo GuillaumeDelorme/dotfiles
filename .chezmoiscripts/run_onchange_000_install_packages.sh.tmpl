@@ -1,0 +1,31 @@
+#!/bin/bash
+
+yay
+yay -S --needed \
+  aws-cli-v2 \
+  beekeeper-studio-bin \
+  blender \
+  cozy-desktop \
+  docker \
+  inkscape \
+  insomnia-bin \
+  keeweb-desktop-bin \
+  krita \
+  libreoffice-fresh \
+  nvm \
+  slack-desktop \
+  visual-studio-code-bin \
+  youtube-music-bin \
+  zsh \
+
+{{ if (or (eq .chezmoi.hostname "guillaume-desktop") (eq .chezmoi.hostname "guillaume-laptop")) }}
+yay -S --needed \
+  discord \
+  steam \
+{{ end }}
+
+{{ if eq .chezmoi.hostname "guillaume-desktop" }}
+yay -S --needed \
+  prusa-slicer \
+  streamdeck-ui \
+{{ end }}
