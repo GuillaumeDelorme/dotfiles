@@ -9,3 +9,11 @@ nvm uninstall default
 
 nvm install $VERSION
 nvm alias default $VERSION
+
+nvm cache clear
+
+npm i -g \
+  pnpm \
+  serve \
+  serverless \
+  vercel \
