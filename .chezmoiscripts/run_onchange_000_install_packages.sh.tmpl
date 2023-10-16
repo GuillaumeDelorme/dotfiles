@@ -11,7 +11,6 @@ yay -S --needed \
   fluent-cursor-theme-git \
   fluent-kde-theme-git \
   inkscape \
-  insomnia-bin \
   kaccounts-providers \
   keeweb-desktop-bin \
   kio-gdrive \
@@ -42,3 +41,7 @@ yay -S --needed \
   prusa-slicer \
   streamdeck-ui \
 {{ end }}
+
+# Remove previously installed packages
+yay -Rns \
+  insomnia-bin \
