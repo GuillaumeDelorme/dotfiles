@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VERSION="18.17.1"
+VERSION="20.10.0"
 
 source /usr/share/nvm/init-nvm.sh
 
