@@ -16,4 +16,6 @@ npm i -g \
   pnpm \
   serve \
   serverless \
+  syncpack \
+  turbo \
   vercel \
