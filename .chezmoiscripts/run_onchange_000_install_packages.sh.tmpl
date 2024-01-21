@@ -1,11 +1,15 @@
 #!/bin/bash
 
+# Remove previously installed packages
+yay -Rns bruno-electron >/dev/null 2>&1 || true
+yay -Rns insomnia-bin >/dev/null 2>&1 || true
+
 yay
 yay -S --needed \
   aws-cli-v2 \
   beekeeper-studio-bin \
   blender \
-  bruno-electron \
+  bruno-bin \
   cozy-desktop \
   dive \
   docker \
@@ -49,8 +53,3 @@ yay -S --needed \
   prusa-slicer \
   streamdeck-ui \
 {{ end }}
-
-# Remove previously installed packages
-yay -Rns \
-  insomnia-bin \
-  >/dev/null 2>&1 || true
